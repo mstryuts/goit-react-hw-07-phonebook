@@ -10,7 +10,6 @@ import { useDispatch, useSelector } from 'react-redux';
 export const App = () => {
   const dispatch = useDispatch();
   const { isLoading, error, getFilter } = useSelector(state);
-  console.log(getFilter);
 
   useEffect(() => {
     dispatch(fetchContacts());
