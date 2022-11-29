@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 export const App = () => {
   const dispatch = useDispatch();
-  const { isLoading, error, getFilter } = useSelector(state);
+  const { isLoading, error } = useSelector(state);
 
   useEffect(() => {
     dispatch(fetchContacts());
